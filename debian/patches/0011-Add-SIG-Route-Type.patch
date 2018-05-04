@@ -34,6 +34,14 @@
  
  /* This function verifies reachability of one given nexthop, which can be
   * numbered or unnumbered, IPv4 or IPv6. The result is unconditionally stored
+@@ -1425,6 +1428,7 @@
+   [ZEBRA_ROUTE_HSLS]    = 4,
+   [ZEBRA_ROUTE_BABEL]   = 2,
+   [ZEBRA_ROUTE_NHRP]    = 2,
++  [ZEBRA_ROUTE_SIG]     = 1,
+ };
+
+ /* Look into the RN and queue it into one or more priority queues,
 --- a/lib/log.c
 +++ b/lib/log.c
 @@ -975,7 +975,7 @@
