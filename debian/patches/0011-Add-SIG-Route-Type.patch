@@ -4,7 +4,7 @@
  ZEBRA_ROUTE_OLSR,       olsr,      olsrd,  'o', 0, 0, "OLSR"
  ZEBRA_ROUTE_BABEL,      babel,     babeld, 'A', 1, 1, "Babel"
  ZEBRA_ROUTE_NHRP,       nhrp,      nhrpd,  'N', 1, 1, "NHRP"
-+ZEBRA_ROUTE_SIG,        sig,       NULL,   's', 1, 1, "SCION-IP Gateway"
++ZEBRA_ROUTE_SIG,        sig,       NULL,   's', 1, 1, "SCION IP-Gateway"
  
  ## help strings
  ZEBRA_ROUTE_SYSTEM, "Reserved route type, for internal use only"
@@ -12,7 +12,7 @@
  ZEBRA_ROUTE_OLSR,   "Optimised Link State Routing (OLSR)"
  ZEBRA_ROUTE_BABEL,  "Babel routing protocol (Babel)"
  ZEBRA_ROUTE_NHRP,   "Next Hop Resolution Protocol (NHRP)"
-+ZEBRA_ROUTE_SIG,    "SCION-IP Gateway exported route"
++ZEBRA_ROUTE_SIG,    "SCION IP-Gateway exported route"
 --- a/zebra/zebra_rib.c
 +++ b/zebra/zebra_rib.c
 @@ -73,6 +73,7 @@
